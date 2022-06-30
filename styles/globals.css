@@ -14,3 +14,24 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: "Kross Neue Grotesk Light";
+  src: url("../public/fonts/KrossNeueGrotesk-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Kross Neue Grotesk Book";
+  src: url("../public/fonts/KrossNeueGrotesk-Book.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Kross Neue Grotesk Bold";
+  src: url("../public/fonts/KrossNeueGrotesk-Bold.ttf");
+  font-weight: bold;
+}
+
+@tailwind utilities;
