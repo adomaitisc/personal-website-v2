@@ -1,7 +1,7 @@
 const Hello = () => {
   return (
     <>
-      <div className="w-full h-screen flex flex-col items-end justify-center text-right">
+      <div className="w-full h-screen flex flex-col items-end justify-center text-right scale-110">
         {/* Title */}
         <h1 className="text-[64px] font-kngb leading-[60px] text-white font-bold">
           Cauã Adomaitis
