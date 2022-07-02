@@ -39,4 +39,6 @@ const Hello = forwardRef((props: {}, ref: Ref<HTMLDivElement>) => (
   </>
 ));
 
+Hello.displayName = "Hello";
+
 export default Hello;

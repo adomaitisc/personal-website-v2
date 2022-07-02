@@ -47,4 +47,6 @@ const Project = forwardRef((props: {}, ref: Ref<HTMLDivElement>) => (
   </>
 ));
 
+Project.displayName = "Project";
+
 export default Project;

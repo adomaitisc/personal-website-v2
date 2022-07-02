@@ -29,4 +29,6 @@ const Navbar = ({ onClick }: any | undefined) => {
   );
 };
 
+Navbar.displayName = "Navbar";
+
 export default Navbar;
