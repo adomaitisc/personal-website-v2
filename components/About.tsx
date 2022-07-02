@@ -8,7 +8,7 @@ const About = forwardRef((props: {}, ref: Ref<HTMLDivElement>) => (
     >
       {/* Title */}
       <h1 className="text-2xl font-kngb leading-2xl text-white font-bold">
-        Here it goes a little about me :)
+        {"Here it goes a little about me :)"}
       </h1>
 
       <div className="mt-8" />
@@ -32,9 +32,9 @@ const About = forwardRef((props: {}, ref: Ref<HTMLDivElement>) => (
         <span className="font-kngb text-white">
           I started developing sneaker bots,
         </span>{" "}
-        with
+        using
         <br />
-        crawlers/requests, and it gave me a lot
+        scrapers/requests, and it gave me a lot
         <br />
         of intial sense and direction.
         <br />

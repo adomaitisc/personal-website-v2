@@ -21,7 +21,12 @@ const Project = forwardRef((props: {}, ref: Ref<HTMLDivElement>) => (
 
       {/* Project Image */}
       <div className="w-[400px] h-[310px] relative right-[-50px]">
-        <Image src="/project-1.png" layout="fill" className="w-auto" />
+        <Image
+          src="/project-1.png"
+          layout="fill"
+          className="w-auto"
+          alt="Project Image"
+        />
       </div>
 
       {/* On Top Of Image */}

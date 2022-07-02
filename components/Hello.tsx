@@ -8,7 +8,7 @@ const Hello = forwardRef((props: {}, ref: Ref<HTMLDivElement>) => (
     >
       {/* Title */}
       <h1 className="text-[64px] font-kngb leading-[60px] text-white font-bold">
-        Cauã Adomaitis
+        {"Cauã Adomaitis"}
       </h1>
 
       {/* Subtitle */}
