@@ -1,5 +1,21 @@
 import { forwardRef, Ref } from "react";
 
+const Gradient = (props: { children: string; color: string }) => {
+  return (
+    <span
+      className={`bg-clip-text text-transparent bg-gradient-to-r ${
+        props.color === "blue"
+          ? "from-blue-400 to-blue-200"
+          : props.color === "green"
+          ? "from-green-400 to-green-200"
+          : " from-pink-400 to-pink-200"
+      }`}
+    >
+      {props.children}
+    </span>
+  );
+};
+
 const Hello = forwardRef((props: { id: string }, ref: Ref<HTMLDivElement>) => (
   <>
     <div
@@ -34,7 +50,9 @@ const Hello = forwardRef((props: { id: string }, ref: Ref<HTMLDivElement>) => (
       <h1 className="text-xl font-kng text-white">
         currently developing with:
         <br />
-        Typescript ReactJS TailwindCSS
+        <Gradient color="blue">Typescript</Gradient>{" "}
+        <Gradient color="green">ReactJS</Gradient>{" "}
+        <Gradient color="red">TailwindCSS</Gradient>
       </h1>
     </div>
   </>

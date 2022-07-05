@@ -1,6 +1,22 @@
 import Image from "next/image";
 import { forwardRef, Ref } from "react";
 
+const Gradient = (props: { children: string; color: string }) => {
+  return (
+    <span
+      className={`bg-clip-text text-transparent bg-gradient-to-r ${
+        props.color === "blue"
+          ? "from-blue-400 to-blue-200"
+          : props.color === "green"
+          ? "from-green-400 to-green-200"
+          : " from-pink-400 to-pink-200"
+      }`}
+    >
+      {props.children}
+    </span>
+  );
+};
+
 const Project = forwardRef(
   (props: { id: string }, ref: Ref<HTMLDivElement>) => (
     <>
@@ -37,7 +53,9 @@ const Project = forwardRef(
           <h1 className="text-base font-kng text-white">
             technologies used:
             <br />
-            Typescript ReactJS Pure CSS
+            <Gradient color="blue">Typescript</Gradient>{" "}
+            <Gradient color="green">ReactJS</Gradient>{" "}
+            <Gradient color="red">Pure CSS</Gradient>
           </h1>
 
           <div className="mt-4" />
