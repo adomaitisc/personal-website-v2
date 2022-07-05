@@ -11,6 +11,9 @@ module.exports = {
         kng: "Kross Neue Grotesk Book",
         kngb: "Kross Neue Grotesk Bold",
       },
+      height: {
+        "92v": "92vh",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")],

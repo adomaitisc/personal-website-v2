@@ -1,11 +1,12 @@
 import { forwardRef, Ref } from "react";
 
-const About = forwardRef((props: {}, ref: Ref<HTMLDivElement>) => (
+const About = forwardRef((props: { id: string }, ref: Ref<HTMLDivElement>) => (
   <>
     <div
-      ref={ref}
-      className="w-full h-screen snap-start box-border flex flex-col items-end justify-center text-right scale-110"
+      id={props.id}
+      className="w-1/2 h-screen flex flex-col items-end justify-center text-right scale-100"
     >
+      <div ref={ref} className="w-0 h-0 top-0" />
       {/* Title */}
       <h1 className="text-2xl font-kngb leading-2xl text-white font-bold">
         {"Here it goes a little about me :)"}
