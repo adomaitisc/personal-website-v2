@@ -1,6 +1,6 @@
 # My personal Website
 
-It is the fourth design iteration because it took me a long time to really mature some design ideas and gather references.
+It is the ~~fourth~~ **fifth** design iteration because it took me a long time to really mature some design ideas and gather references.
 
 ![Image of Hello page in the website.](https://raw.githubusercontent.com/adomaitisc/personal-website-v2/main/public/thumb-for-github.jpg?raw=true "o.o")
 
