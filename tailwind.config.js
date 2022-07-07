@@ -12,7 +12,7 @@ module.exports = {
         kngb: "Kross Neue Grotesk Bold",
       },
       height: {
-        "92v": "92vh",
+        "80v": "80vh",
       },
     },
   },

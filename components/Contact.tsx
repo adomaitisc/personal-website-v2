@@ -1,23 +1,21 @@
 import Image from "next/image";
-import { forwardRef, Ref } from "react";
 
-const Contact = forwardRef(
-  (props: { id: string }, ref: Ref<HTMLDivElement>) => (
+const Contact = (props: { id: string }) => {
+  return (
     <>
       <div
         id={props.id}
-        className="w-1/2 h-screen flex flex-col items-end justify-center text-right scale-100"
+        className="h-screen flex flex-col items-start justify-center text-left scale-100"
       >
-        <div ref={ref} className="w-0 h-0 top-0" />
         {/* Title */}
-        <h1 className="text-2xl font-kngb leading-2xl text-white font-bold">
+        <h2 className="text-4xl font-kngb leading-2xl text-white font-bold">
           {"Don't be afraid, hit me up!"}
-        </h1>
+        </h2>
 
         <div className="mt-8" />
 
         {/* Text */}
-        <h1 className="text-base font-kng text-zinc-400">
+        <h1 className="text-2xl font-kng text-zinc-400">
           <span className="font-kngb text-white">
             If you wish to start your long-dreamed project,
           </span>
@@ -26,7 +24,7 @@ const Contact = forwardRef(
           <br />
           <br />
           <span className="font-kngb text-white">For casual purposes,</span> you
-          {"can 'dm' me on any"}
+          {" can 'dm' me on any"}
           <br />
           social network I have down here.
           <br />
@@ -36,13 +34,13 @@ const Contact = forwardRef(
           </span>{" "}
           you can email me so we
           <br />
-          can schedule a meeting, or perhaps a call.
+          can schedule a meeting or something.
         </h1>
 
         <div className="mt-8" />
 
         {/* Social */}
-        <div className="flex flex-row text-base text-white font-kng gap-8">
+        <div className="flex flex-row text-xl text-zinc-300 font-kngb gap-8">
           <div className="flex flex-col items-start gap-2">
             <div className="flex flex-row items-center justify-center gap-2">
               <Image
@@ -104,9 +102,7 @@ const Contact = forwardRef(
         </div>
       </div>
     </>
-  )
-);
-
-Contact.displayName = "Contact";
+  );
+};
 
 export default Contact;

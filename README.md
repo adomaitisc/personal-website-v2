@@ -9,6 +9,7 @@ It is the fourth design iteration because it took me a long time to really matur
 ## Current Todos
 
 - [x] Design
+- [x] Redesign
 - [ ] Mobile Version (design)
 - [x] Hero section
 - [x] Project section
