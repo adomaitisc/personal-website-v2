@@ -20,3 +20,4 @@ It is the fourth design iteration because it took me a long time to really matur
 - [x] react-scroll (navbar/content)
 - [ ] Mobile friendly
 - [ ] Meta tags
+- [ ] Loader
