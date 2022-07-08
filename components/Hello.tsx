@@ -19,30 +19,32 @@ const Hello = (props: { id: string }) => {
     <>
       <div
         id={props.id}
-        className="h-screen flex flex-col items-start justify-center text-left scale-100"
+        className="h-screen sm:h-80v sm:max-w-[80%] flex flex-col items-start justify-center text-left scale-100"
       >
         {/* Subtitle */}
-        <h3 className="text-2xl font-kng text-zinc-400">Hello There! I am</h3>
+        <h3 className="text-2xl sm:text-base font-kng text-zinc-400">
+          Hello There! I am
+        </h3>
 
         {/* Title */}
-        <h1 className="text-8xl font-kngb leading-[90px] text-white font-bold">
+        <h1 className="text-8xl sm:text-3xl font-kngb leading-[90px] text-white font-bold">
           {"Cauã Adomaitis"}
         </h1>
 
-        <div className="mt-10" />
+        <div className="mt-10 sm:mt-4" />
 
         {/* Briefing */}
-        <p className="text-3xl font-kng text-zinc-400">
+        <p className="text-3xl sm:text-base font-kng text-zinc-400">
           I am a{" "}
           <span className="font-kngb text-white">front-end developer,</span>
           <br />
           giving life to your custom projects.
         </p>
 
-        <div className="mt-10" />
+        <div className="mt-10 sm:mt-4" />
 
         {/* Suitcase */}
-        <p className="text-2xl font-kng text-zinc-400">
+        <p className="text-2xl sm:text-base font-kng text-zinc-400">
           currently developing with:
           <br />
           <Gradient color="blue">Typescript</Gradient>{" "}

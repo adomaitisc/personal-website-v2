@@ -5,17 +5,17 @@ const Contact = (props: { id: string }) => {
     <>
       <div
         id={props.id}
-        className="h-screen flex flex-col items-start justify-center text-left scale-100"
+        className="h-screen sm:h-auto sm:my-20 sm:max-w-[80%] flex flex-col items-start justify-center text-left scale-100"
       >
         {/* Title */}
-        <h2 className="text-4xl font-kngb leading-2xl text-white font-bold">
+        <h2 className="text-4xl sm:text-3xl font-kngb leading-2xl text-white font-bold">
           {"Don't be afraid, hit me up!"}
         </h2>
 
-        <div className="mt-8" />
+        <div className="mt-8 sm:mt-4" />
 
         {/* Text */}
-        <h1 className="text-2xl font-kng text-zinc-400">
+        <h1 className="text-2xl sm:text-base font-kng text-zinc-400">
           <span className="font-kngb text-white">
             If you wish to start your long-dreamed project,
           </span>
@@ -40,8 +40,8 @@ const Contact = (props: { id: string }) => {
         <div className="mt-8" />
 
         {/* Social */}
-        <div className="flex flex-row text-xl text-zinc-300 font-kngb gap-8">
-          <div className="flex flex-col items-start gap-2">
+        <div className="flex flex-row text-xl sm:flex-col sm:text-sm sm:gap-3 text-zinc-300 font-kngb gap-8">
+          <div className="flex flex-col items-start gap-2 sm:gap-3">
             <div className="flex flex-row items-center justify-center gap-2">
               <Image
                 src="/icons/Mail.svg"
@@ -61,7 +61,7 @@ const Contact = (props: { id: string }) => {
               +55 11 97300-4230
             </div>
           </div>
-          <div className="flex flex-col items-start gap-2">
+          <div className="flex flex-col items-start gap-2 sm:gap-3">
             <div className="flex flex-row items-center justify-center gap-2">
               <Image
                 src="/icons/Discord.svg"

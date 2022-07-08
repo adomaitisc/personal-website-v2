@@ -5,6 +5,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      sm: { max: "380px" },
+    },
     extend: {
       fontFamily: {
         kngl: "Kross Neue Grotesk Light",

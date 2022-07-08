@@ -3,17 +3,17 @@ const About = (props: { id: string }) => {
     <>
       <div
         id={props.id}
-        className="h-screen flex flex-col items-start justify-center text-left scale-100"
+        className="h-screen sm:h-auto sm:max-w-[80%] sm:my-20 flex flex-col items-start justify-center text-left scale-100"
       >
         {/* Title */}
-        <h2 className="text-4xl font-kngb text-white font-bold">
+        <h2 className="text-4xl sm:text-3xl font-kngb text-white font-bold">
           {"Here it goes a little about me :)"}
         </h2>
 
-        <div className="mt-8" />
+        <div className="mt-8 sm:mt-4" />
 
         {/* Text */}
-        <p className="text-2xl font-kng text-zinc-400">
+        <p className="text-2xl sm:text-base font-kng text-zinc-400">
           <span className="font-kngb text-white">I was born in Brazil,</span> in
           2003. I am the only
           <br />
@@ -47,7 +47,7 @@ const About = (props: { id: string }) => {
           <br />
           located in Boston, Massachusetts.
           <br />
-          <span className="text-base font-kngl text-zinc-500">
+          <span className="text-xl sm:text-sm font-kngl text-zinc-500">
             - I am loving here, even with the cons.
           </span>
           <br />
@@ -57,7 +57,7 @@ const About = (props: { id: string }) => {
           <br />
           cook a nice dinner, listen to my playlists...
           <br />
-          <span className="text-base font-kngl text-zinc-500">
+          <span className="text-xl sm:text-sm font-kngl text-zinc-500">
             - well, I could write a long list about this.
           </span>
         </p>

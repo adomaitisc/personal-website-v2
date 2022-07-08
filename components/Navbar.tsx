@@ -4,8 +4,8 @@ import Image from "next/image";
 const Navbar = ({ onClick, height, position }: any | undefined) => {
   return (
     <>
-      <div className="py-4 w-5/6 fixed top-0 flex flex-row items-center justify-center font-kngb bg-black/70 backdrop-blur-sm">
-        <div className="left-0 absolute cursor-pointer group">
+      <div className="py-4 w-5/6 sm:w-full sm:py-8 fixed top-0 flex flex-row items-center justify-center font-kngb bg-black/70 backdrop-blur-sm">
+        <div className="left-0 absolute cursor-pointer">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             to="hello"
@@ -13,11 +13,20 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
             smooth={true}
             duration={300}
           >
-            <Image src="/icons/Logo.svg" width={50} height={24} alt="Logo" />
+            <Image src="/icons/Logo.svg" width={42} height={20} alt="Logo" />
           </Link>
         </div>
 
-        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative">
+        <div className="right-0 absolute cursor-pointer invisible sm:visible">
+          <div
+            className="py-1 px-[0.75rem]"
+            style={{ padding: "1rem 0.75rem" }}
+          >
+            <Image src="/icons/Menu.svg" width={19} height={14} alt="Menu" />
+          </div>
+        </div>
+
+        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative sm:hidden">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -30,7 +39,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </Link>
         </div>
 
-        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative">
+        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative sm:hidden">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -43,7 +52,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </Link>
         </div>
 
-        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative">
+        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative sm:hidden">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -56,7 +65,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </Link>
         </div>
 
-        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative">
+        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative sm:hidden">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"

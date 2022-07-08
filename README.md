@@ -10,7 +10,7 @@ It is the ~~fourth~~ **fifth** design iteration because it took me a long time t
 
 - [x] Design
 - [x] Redesign
-- [ ] Mobile Version (design)
+- [x] Mobile Version (design)
 - [x] Hero section
 - [x] Project section
 - [x] About section
@@ -18,6 +18,12 @@ It is the ~~fourth~~ **fifth** design iteration because it took me a long time t
 - [x] NavBar
 - [ ] Prop-able Projects
 - [x] react-scroll (navbar/content)
-- [ ] Mobile friendly
+- [ ] Mobile friendly (fuck)
+  - [x] max-w-320px
+  - [ ] max-w-480px
+  - [ ] max-w-600px
+  - [ ] max-w-768px
+  - [ ] max-w-992px
+  - [ ] max-w-1382px
 - [ ] Meta tags
 - [ ] Loader
