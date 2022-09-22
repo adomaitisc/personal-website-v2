@@ -1,11 +1,12 @@
 import type { NextPage } from "next";
-import dynamic from "next/dynamic";
 import Head from "next/head";
 import About from "../components/About";
 import Background from "../components/Background";
 import Contact from "../components/Contact";
 import Hello from "../components/Hello";
 import Navbar from "../components/Navbar";
+
+import { Animator } from "react-scroll-motion";
 
 import {
   ScrollContainer,
@@ -15,11 +16,6 @@ import {
   MoveOut,
   Sticky,
 } from "react-scroll-motion";
-
-const Animator = dynamic(
-  import("react-scroll-motion").then((it) => it.Animator),
-  { ssr: false }
-);
 
 const Fade = batch(FadeIn(), MoveOut());
 
