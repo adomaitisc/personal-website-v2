@@ -43,7 +43,7 @@ const Contact = () => {
               />
               <a
                 href="mailto:adomaitisc@wit.edu"
-                rel="noreferer"
+                rel="noreferrer"
                 target="_blank"
               >
                 adomaitisc@wit.edu
@@ -87,7 +87,7 @@ const Contact = () => {
               />
               <a
                 href="https://www.linkedin.com/in/cauaadomaitis/"
-                rel="noreferer"
+                rel="noreferrer"
                 target="_blank"
               >
                 Cauã Adomaitis
@@ -102,7 +102,7 @@ const Contact = () => {
               />
               <a
                 href="https://github.com/adomaitisc"
-                rel="noreferer"
+                rel="noreferrer"
                 target="_blank"
               >
                 adomaitisc

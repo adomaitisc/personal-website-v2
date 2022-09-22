@@ -82,7 +82,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           <a
             style={{ padding: "1rem 0.75rem" }}
             href="https://github.com/adomaitisc/personal-website-v2/blob/main/public/resume.pdf"
-            rel="noreferer"
+            rel="noreferrer"
             target="_blank"
           >
             download cv
