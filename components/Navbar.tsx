@@ -78,10 +78,10 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </Link>
         </div>
 
-        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative sm:hidden">
+        <div className="px-4 py-3 text-violet-500 font-kng hover:text-violet-300 cursor-pointer relative sm:hidden">
           <a
             style={{ padding: "1rem 0.75rem" }}
-            href="https://github.com/adomaitisc/personal-website-v2/blob/main/public/resume.pdf"
+            href="https://github.com/adomaitisc/personal-website-v2/raw/main/public/resume.pdf"
             rel="noreferrer"
             target="_blank"
           >
