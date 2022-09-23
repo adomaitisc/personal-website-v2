@@ -1,45 +1,119 @@
+import { useEffect, useRef, useState } from "react";
+
 const About = () => {
+  const [visibleElements, setVisibleElements] = useState({
+    title: false,
+    p1: false,
+    p2: false,
+    p3: false,
+    p4: false,
+    p5: false,
+  });
+
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const p1Ref = useRef<HTMLParagraphElement>(null);
+  const p2Ref = useRef<HTMLParagraphElement>(null);
+  const p3Ref = useRef<HTMLParagraphElement>(null);
+  const p4Ref = useRef<HTMLParagraphElement>(null);
+  const p5Ref = useRef<HTMLParagraphElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setVisibleElements((prev) => {
+            return {
+              ...prev,
+              [entry.target.id]: entry.isIntersecting,
+            };
+          });
+        });
+      },
+      {
+        threshold: 1,
+      }
+    );
+    observer.observe(titleRef.current!);
+    observer.observe(p1Ref.current!);
+    observer.observe(p2Ref.current!);
+    observer.observe(p3Ref.current!);
+    observer.observe(p4Ref.current!);
+    observer.observe(p5Ref.current!);
+  }, []);
+
   return (
     <div className="w-screen h-screen flex items-center p-[20%]">
       <div className="h-full sm:h-auto sm:max-w-[80%] sm:my-20 flex flex-col items-start justify-center text-left scale-100">
         {/* Title */}
-        <h2 className="text-4xl sm:text-3xl font-kngb text-white font-bold">
-          A little about me.
+        <h2
+          id="title"
+          ref={titleRef}
+          className={`text-4xl sm:text-3xl font-kngb text-rose-500/70 font-bold duration-500 ${
+            visibleElements.title ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
+          }`}
+        >
+          About me.
         </h2>
 
         <div className="mt-8 sm:mt-4" />
 
         {/* Text */}
-        <p className="text-2xl max-w-[60%] sm:text-base font-kng text-zinc-400">
-          <span className="font-kngb text-white">I was born in Brazil,</span> in
-          2003. and recently moved to the US
-          <br />
-          <br />
-          <span className="font-kngb text-white">
-            I have been developing since 2018,
-          </span>{" "}
-          trying
-          <br />
-          many languages like Java, PHP, and JavaScript.
-          <br />
-          <br />
-          <span className="font-kngb text-white">
-            I started developing sneaker bots,
-          </span>{" "}
-          using scrapers/requests, and it gave me a lot of intial sense and
-          direction.
-          <br />
-          <br />
-          <span className="font-kngb text-white">
-            Now I am studying Computer Science
-          </span>{" "}
-          at Wentworth Institute of Technology, located in Boston,
-          Massachusetts.
-          <br />
-          <br />
-          <span className="font-kngb text-white">In my free time,</span> I could
-          start a new project, cook a nice dinner, listen to my playlists...
-        </p>
+        <div className="flex flex-col gap-4">
+          {/* text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 */}
+          <p
+            id="p1"
+            ref={p1Ref}
+            className={`text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 duration-500 ${
+              visibleElements.p1 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
+            }`}
+          >
+            I was born in Brazil, in 2003, but I currently reside on the US.
+          </p>
+
+          <p
+            id="p2"
+            ref={p2Ref}
+            className={`text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 duration-500 ${
+              visibleElements.p2 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
+            }`}
+          >
+            I have been developing since 2018, exploring many languages such as
+            Java, PHP, and JavaScript.
+          </p>
+
+          <p
+            id="p3"
+            ref={p3Ref}
+            className={`text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 duration-500 ${
+              visibleElements.p3 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
+            }`}
+          >
+            I started developing sneaker bots, using scrapers/requests, and it
+            led me to web development.
+          </p>
+
+          <p
+            id="p4"
+            ref={p4Ref}
+            className={`text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 duration-500 ${
+              visibleElements.p4 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
+            }`}
+          >
+            Now I am studying Computer Science at Wentworth Institute of
+            Technology, located in Boston, Massachusetts.
+          </p>
+
+          <p
+            id="p5"
+            ref={p5Ref}
+            className={`text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 duration-500 ${
+              visibleElements.p5 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
+            }`}
+          >
+            In my free time I like to practice tennis, explore cultural recipes,
+            or listen to my playlists...
+          </p>
+        </div>
       </div>
     </div>
   );

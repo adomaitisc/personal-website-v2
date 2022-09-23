@@ -1,23 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { useRef } from "react";
 import About from "../components/About";
 import Background from "../components/Background";
 import Contact from "../components/Contact";
 import Hello from "../components/Hello";
 import Navbar from "../components/Navbar";
-
-import { Animator } from "react-scroll-motion";
-
-import {
-  ScrollContainer,
-  ScrollPage,
-  batch,
-  FadeIn,
-  MoveOut,
-  Sticky,
-} from "react-scroll-motion";
-
-const Fade = batch(FadeIn(), MoveOut());
 
 const Home: NextPage = () => {
   return (
@@ -29,30 +17,15 @@ const Home: NextPage = () => {
       </Head>
       <Background />
       <div className="w-screen overflow-x-hidden flex flex-col items-center justify-center">
-        <ScrollContainer>
-          <div id="hello">
-            <ScrollPage>
-              <Animator animation={Fade}>
-                <Hello />
-              </Animator>
-            </ScrollPage>
-          </div>
-          <div id="about">
-            <ScrollPage>
-              <Animator animation={Fade}>
-                <About />
-              </Animator>
-            </ScrollPage>
-          </div>
-          <div id="contact">
-            <ScrollPage>
-              <Animator animation={Fade}>
-                <Contact />
-              </Animator>
-            </ScrollPage>
-          </div>
-        </ScrollContainer>
-        {/* <Project id="projects" /> */}
+        <div id="hello">
+          <Hello />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
       </div>
       <Navbar />
     </main>

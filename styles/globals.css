@@ -31,5 +31,10 @@ body {
   src: url("../public/fonts/KrossNeueGrotesk-Bold.ttf");
   font-weight: bold;
 }
+@font-face {
+  font-family: "Kross Neue Grotesk Heavy";
+  src: url("../public/fonts/KrossNeueGrotesk-Heavy.ttf");
+  font-weight: bolder;
+}
 
 @tailwind utilities;

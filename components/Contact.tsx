@@ -1,40 +1,111 @@
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 const Contact = () => {
+  const [visibleElements, setVisibleElements] = useState({
+    title: false,
+    p1: false,
+    p2: false,
+    p3: false,
+    social: false,
+  });
+
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const p1Ref = useRef<HTMLParagraphElement>(null);
+  const p2Ref = useRef<HTMLParagraphElement>(null);
+  const p3Ref = useRef<HTMLParagraphElement>(null);
+  const socialRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setVisibleElements((prev) => {
+            return {
+              ...prev,
+              [entry.target.id]: entry.isIntersecting,
+            };
+          });
+        });
+      },
+      {
+        threshold: 1,
+      }
+    );
+    observer.observe(titleRef.current!);
+    observer.observe(p1Ref.current!);
+    observer.observe(p2Ref.current!);
+    observer.observe(p3Ref.current!);
+    observer.observe(socialRef.current!);
+  }, []);
+
   return (
     <div className="w-screen h-screen flex items-center p-[20%]">
       <div className="h-full sm:h-auto sm:my-20 sm:max-w-[80%] flex flex-col items-start justify-center text-left scale-100">
         {/* Title */}
-        <h2 className="text-4xl sm:text-3xl font-kngb leading-2xl text-white font-bold">
+        <h2
+          id="title"
+          ref={titleRef}
+          className={`text-4xl sm:text-3xl font-kngb text-violet-500/70 font-bold duration-500 ${
+            visibleElements.title ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
+          }`}
+        >
           Send me a message.
         </h2>
 
         <div className="mt-8 sm:mt-4" />
 
         {/* Text */}
-        <p className="text-2xl max-w-[60%] sm:text-base font-kng text-zinc-400">
-          <span className="font-kngb text-white">
-            If you wish to start your long-dreamed project,
-          </span>{" "}
-          or if you want to clear some questions.
-          <br />
-          <br />
-          <span className="font-kngb text-white">For casual purposes,</span> you
-          can dm me on any social media I have down here.
-          <br />
-          <br />
-          <span className="font-kngb text-white">
-            Now, if you are serious,
-          </span>{" "}
-          you can email me so we can schedule a meeting or something.
-        </p>
+        <div className="flex flex-col gap-4">
+          {/* text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 */}
+          <p
+            id="p1"
+            ref={p1Ref}
+            className={`text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 duration-500 ${
+              visibleElements.p1 ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
+            }`}
+          >
+            If you wish to start your long-dreamed project, or if you want to
+            clear some questions.
+          </p>
+
+          <p
+            id="p2"
+            ref={p2Ref}
+            className={`text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 duration-500 ${
+              visibleElements.p2 ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
+            }`}
+          >
+            For casual purposes, you can dm me on any social media I have down
+            here.
+          </p>
+
+          <p
+            id="p3"
+            ref={p3Ref}
+            className={`text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 duration-500 ${
+              visibleElements.p3 ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
+            }`}
+          >
+            Now, if you are serious, you can email me so we can schedule a
+            meeting or something.
+          </p>
+        </div>
 
         <div className="mt-8" />
 
         {/* Social */}
-        <div className="flex flex-row text-xl sm:flex-col sm:text-sm sm:gap-3 text-zinc-300 font-kngb gap-8">
+        <div className="flex flex-row text-2xl sm:flex-col sm:text-sm sm:gap-3 text-white font-kngb gap-8 opacity-70 duration-500">
           <div className="flex flex-col items-start gap-2 sm:gap-3">
-            <div className="flex flex-row items-center justify-center gap-2 hover:text-zinc-400">
+            <div
+              ref={socialRef}
+              id="social"
+              className={`flex flex-row items-center justify-center gap-2 hover:text-zinc-400 duration-500 ${
+                visibleElements.social
+                  ? "ml-0 opacity-100"
+                  : "ml-[-80px] opacity-0"
+              }`}
+            >
               <Image
                 src="/icons/Mail.svg"
                 width={20}
@@ -49,7 +120,15 @@ const Contact = () => {
                 adomaitisc@wit.edu
               </a>
             </div>
-            <div className="flex flex-row items-center justify-center gap-2 hover:text-zinc-400">
+            <div
+              ref={socialRef}
+              id="social"
+              className={`flex flex-row items-center justify-center gap-2 hover:text-zinc-400 duration-500 ${
+                visibleElements.social
+                  ? "ml-0 opacity-100"
+                  : "ml-[-80px] opacity-0"
+              }`}
+            >
               <Image
                 src="/icons/Phone.svg"
                 width={20}
@@ -78,7 +157,15 @@ const Contact = () => {
               />
               @adomaitiscaua
             </div> */}
-            <div className="flex flex-row items-center justify-center gap-2 hover:text-zinc-400">
+            <div
+              ref={socialRef}
+              id="social"
+              className={`flex flex-row items-center justify-center gap-2 hover:text-zinc-400 duration-500 ${
+                visibleElements.social
+                  ? "ml-0 opacity-100"
+                  : "ml-[-80px] opacity-0"
+              }`}
+            >
               <Image
                 src="/icons/LinkedIn.svg"
                 width={16}
@@ -93,7 +180,15 @@ const Contact = () => {
                 Cauã Adomaitis
               </a>
             </div>
-            <div className="flex flex-row items-center justify-center gap-2 hover:text-zinc-400">
+            <div
+              ref={socialRef}
+              id="social"
+              className={`flex flex-row items-center justify-center gap-2 hover:text-zinc-400 duration-500 ${
+                visibleElements.social
+                  ? "ml-0 opacity-100"
+                  : "ml-[-80px] opacity-0"
+              }`}
+            >
               <Image
                 src="/icons/Github.svg"
                 width={16}

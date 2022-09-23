@@ -13,6 +13,7 @@ module.exports = {
         kngl: "Kross Neue Grotesk Light",
         kng: "Kross Neue Grotesk Book",
         kngb: "Kross Neue Grotesk Bold",
+        kngh: "Kross Neue Grotesk Heavy",
       },
       height: {
         "80v": "80vh",
