@@ -1,19 +1,9 @@
 import { Link } from "react-scroll";
-import Image from "next/image";
 
-const Navbar = ({ onClick, height, position }: any | undefined) => {
+const Navbar = () => {
   return (
     <>
       <div className="py-4 h-20 w-screen fixed top-0 flex flex-row items-center justify-center font-kngb backdrop-blur-md">
-        <div className="right-0 absolute cursor-pointer invisible">
-          <div
-            className="py-1 px-[0.75rem]"
-            style={{ padding: "1rem 0.75rem" }}
-          >
-            <Image src="/icons/Menu.svg" width={19} height={14} alt="Menu" />
-          </div>
-        </div>
-
         <div className="md:px-4 py-3 hover:text-gray-300 cursor-pointer relative select-none touch-none">
           <Link
             style={{ padding: "1rem 0.75rem" }}

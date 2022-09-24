@@ -33,11 +33,6 @@ body::-webkit-scrollbar-thumb {
 @tailwind components;
 
 @font-face {
-  font-family: "Kross Neue Grotesk Light";
-  src: url("../public/fonts/KrossNeueGrotesk-Light.ttf");
-  font-weight: 300;
-}
-@font-face {
   font-family: "Kross Neue Grotesk Book";
   src: url("../public/fonts/KrossNeueGrotesk-Book.ttf");
   font-weight: normal;

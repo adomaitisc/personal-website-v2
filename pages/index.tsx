@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useRef } from "react";
 import About from "../components/About";
 import Background from "../components/Background";
 import Contact from "../components/Contact";
