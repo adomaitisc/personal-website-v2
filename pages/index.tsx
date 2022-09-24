@@ -17,10 +17,7 @@ const Home: NextPage = () => {
         <meta name="theme-color" content="rgb(0, 0, 0)" />
       </Head>
       <Background />
-      <div
-        id="scroll_element"
-        className="w-screen overflow-x-hidden flex flex-col items-center justify-center"
-      >
+      <div className="w-screen overflow-x-hidden flex flex-col items-center justify-center">
         <div id="hello">
           <Hello />
         </div>

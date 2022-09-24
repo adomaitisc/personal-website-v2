@@ -53,12 +53,12 @@ const Hello = () => {
 
   return (
     <div className="w-screen mt-20 h-[85vh] flex items-center p-[20%]">
-      <div className="h-full sm:h-80v sm:max-w-[80%] flex flex-col items-start justify-center text-left scale-100">
+      <div className="h-full flex flex-col items-start justify-center text-left scale-100">
         {/* Subtitle */}
         <h3
           id="subtitle"
           ref={subtitleRef}
-          className={`text-2xl sm:text-base font-kngb text-white/70 duration-500 ${
+          className={`text-2xl font-kngb text-white/70 duration-500 ${
             visibleElements.subtitle
               ? "ml-0 opacity-100"
               : "ml-[-80px] opacity-0"
@@ -73,7 +73,7 @@ const Hello = () => {
         <h1
           id="title"
           ref={titleRef}
-          className={`text-8xl sm:text-3xl font-kngb leading-[90px] text-white font-bold duration-500 ${
+          className={`text-8xl font-kngb leading-[90px] text-white font-bold duration-500 ${
             visibleElements.title ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
           }`}
         >
@@ -86,7 +86,7 @@ const Hello = () => {
         <p
           id="p1"
           ref={p1Ref}
-          className={`text-3xl sm:text-base font-kngb text-white/70 max-w-[60%] duration-500 ${
+          className={`text-3xl font-kngb text-white/70 max-w-[60%] duration-500 ${
             visibleElements.p1 ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
           }`}
         >
@@ -99,7 +99,7 @@ const Hello = () => {
         <p
           id="p2"
           ref={p2Ref}
-          className={`text-2xl sm:text-base font-kngb text-rose-500/70 duration-500 ${
+          className={`text-2xl font-kngb text-rose-500/70 duration-500 ${
             visibleElements.p2 ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
           }`}
         >

@@ -43,27 +43,27 @@ const About = () => {
 
   return (
     <div className="w-screen h-screen flex items-center p-[20%]">
-      <div className="h-full sm:h-auto sm:max-w-[80%] sm:my-20 flex flex-col items-start justify-center text-left scale-100">
+      <div className="h-full flex flex-col items-start justify-center text-left scale-100">
         {/* Title */}
         <h2
           id="title"
           ref={titleRef}
-          className={`text-4xl sm:text-3xl font-kngb text-rose-500/70 font-bold duration-500 ${
+          className={`text-4xl font-kngb text-rose-500/70 font-bold duration-500 ${
             visibleElements.title ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
           }`}
         >
           About me.
         </h2>
 
-        <div className="mt-8 sm:mt-4" />
+        <div className="mt-8" />
 
         {/* Text */}
         <div className="flex flex-col gap-4">
-          {/* text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 */}
+          {/* text-3xl max-w-[80%] font-kngb text-orange-100/70 */}
           <p
             id="p1"
             ref={p1Ref}
-            className={`text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 duration-500 ${
+            className={`text-3xl max-w-[80%] font-kngb text-orange-100/70 duration-500 ${
               visibleElements.p1 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
             }`}
           >
@@ -73,7 +73,7 @@ const About = () => {
           <p
             id="p2"
             ref={p2Ref}
-            className={`text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 duration-500 ${
+            className={`text-3xl max-w-[80%] font-kngb text-orange-100/70 duration-500 ${
               visibleElements.p2 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
             }`}
           >
@@ -84,7 +84,7 @@ const About = () => {
           <p
             id="p3"
             ref={p3Ref}
-            className={`text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 duration-500 ${
+            className={`text-3xl max-w-[80%] font-kngb text-orange-100/70 duration-500 ${
               visibleElements.p3 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
             }`}
           >
@@ -95,7 +95,7 @@ const About = () => {
           <p
             id="p4"
             ref={p4Ref}
-            className={`text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 duration-500 ${
+            className={`text-3xl max-w-[80%] font-kngb text-orange-100/70 duration-500 ${
               visibleElements.p4 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
             }`}
           >
@@ -106,7 +106,7 @@ const About = () => {
           <p
             id="p5"
             ref={p5Ref}
-            className={`text-3xl max-w-[80%] sm:text-base font-kngb text-orange-100/70 duration-500 ${
+            className={`text-3xl max-w-[80%] font-kngb text-orange-100/70 duration-500 ${
               visibleElements.p5 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
             }`}
           >

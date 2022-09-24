@@ -4,8 +4,8 @@ import Image from "next/image";
 const Navbar = ({ onClick, height, position }: any | undefined) => {
   return (
     <>
-      <div className="py-4 h-20 w-screen sm:w-full sm:py-8 fixed top-0 flex flex-row items-center justify-center font-kngb backdrop-blur-md">
-        <div className="right-0 absolute cursor-pointer invisible sm:visible">
+      <div className="py-4 h-20 w-screen fixed top-0 flex flex-row items-center justify-center font-kngb backdrop-blur-md">
+        <div className="right-0 absolute cursor-pointer invisible">
           <div
             className="py-1 px-[0.75rem]"
             style={{ padding: "1rem 0.75rem" }}
@@ -14,7 +14,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </div>
         </div>
 
-        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative sm:hidden">
+        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -27,7 +27,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </Link>
         </div>
 
-        {/* <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative sm:hidden">
+        {/* <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -40,7 +40,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </Link>
         </div> */}
 
-        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative sm:hidden">
+        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -53,7 +53,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </Link>
         </div>
 
-        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative sm:hidden">
+        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -66,7 +66,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </Link>
         </div>
 
-        <div className="px-4 py-3 text-violet-500 font-kng cursor-pointer relative sm:hidden animate-pulse hover:animate-none">
+        <div className="px-4 py-3 text-violet-500 font-kng cursor-pointer relative animate-pulse hover:animate-none">
           <a
             style={{ padding: "1rem 0.75rem" }}
             href="https://github.com/adomaitisc/personal-website-v2/raw/main/public/resume.pdf"
