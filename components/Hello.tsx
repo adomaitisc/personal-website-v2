@@ -1,21 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 
-const Gradient = (props: { children: string; color: string }) => {
-  return (
-    <span
-      className={`bg-clip-text text-transparent bg-gradient-to-r ${
-        props.color === "blue"
-          ? "from-blue-500/70 to-blue-400/50"
-          : props.color === "green"
-          ? "from-green-500/70 to-green-400/50"
-          : " from-pink-500/70 to-pink-400/50"
-      }`}
-    >
-      {props.children}
-    </span>
-  );
-};
-
 const Hello = () => {
   const [visibleElements, setVisibleElements] = useState({
     subtitle: false,
@@ -52,16 +36,15 @@ const Hello = () => {
   }, []);
 
   return (
-    <div className="w-screen mt-20 h-[85vh] flex items-center p-[20%]">
-      <div className="h-full flex flex-col items-start justify-center text-left scale-100">
-        {/* Subtitle */}
+    <div className="h-full flex justify-center items-center scale-100">
+      <div className="h-full w-full md:px-[10%] xl:px-[20%] flex flex-col items-start justify-center text-left">
         <h3
           id="subtitle"
           ref={subtitleRef}
-          className={`text-2xl font-kngb text-white/70 duration-500 ${
+          className={`text-lg sm:text-xl md:text-2xl lg:text-3xl font-kngb text-white/70 duration-500 ${
             visibleElements.subtitle
               ? "ml-0 opacity-100"
-              : "ml-[-80px] opacity-0"
+              : "md:ml-[-80px] opacity-0"
           }`}
         >
           Hello There! I am
@@ -69,38 +52,37 @@ const Hello = () => {
 
         <div className="mt-2"></div>
 
-        {/* Title */}
         <h1
           id="title"
           ref={titleRef}
-          className={`text-8xl font-kngb leading-[90px] text-white font-bold duration-500 ${
-            visibleElements.title ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
+          className={`text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-kngb text-white font-bold duration-500 ${
+            visibleElements.title
+              ? "ml-0 opacity-100"
+              : "md:ml-[-80px] opacity-0"
           }`}
         >
           Cauã Adomaitis
         </h1>
 
-        <div className="mt-8 sm:mt-4" />
+        <div className="mt-2" />
 
-        {/* Briefing */}
         <p
           id="p1"
           ref={p1Ref}
-          className={`text-3xl font-kngb text-white/70 max-w-[60%] duration-500 ${
-            visibleElements.p1 ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
+          className={`text-lg sm:text-xl md:text-2xl lg:text-3xl md:max-w-[80%] lg:max-w-[70%] font-kngb text-white/70 duration-500 ${
+            visibleElements.p1 ? "ml-0 opacity-100" : "md:ml-[-80px] opacity-0"
           }`}
         >
           I am a front-end developer, and computer science student.
         </p>
 
-        <div className="mt-8 sm:mt-4" />
+        <div className="mt-4 md:mt-8" />
 
-        {/* Suitcase */}
         <p
           id="p2"
           ref={p2Ref}
-          className={`text-2xl font-kngb text-rose-500/70 duration-500 ${
-            visibleElements.p2 ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
+          className={`text-base sm:text-lg md:text-xl lg:text-2xl font-kngb text-rose-500/70 duration-500 ${
+            visibleElements.p2 ? "ml-0 opacity-100" : "md:ml-[-80px] opacity-0"
           }`}
         >
           From São Paulo, based in Boston.

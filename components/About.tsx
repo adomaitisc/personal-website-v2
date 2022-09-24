@@ -42,29 +42,32 @@ const About = () => {
   }, []);
 
   return (
-    <div className="w-screen h-screen flex items-center p-[20%]">
-      <div className="h-full flex flex-col items-start justify-center text-left scale-100">
+    <div className="h-full flex justify-center items-center scale-100">
+      <div className="h-full w-full md:px-[10%] xl:px-[20%] flex flex-col items-start justify-center text-left">
         {/* Title */}
         <h2
           id="title"
           ref={titleRef}
-          className={`text-4xl font-kngb text-rose-500/70 font-bold duration-500 ${
-            visibleElements.title ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
+          className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-kngb text-rose-500/70 duration-500 ${
+            visibleElements.title
+              ? "ml-0 opacity-100"
+              : " md:ml-[-80px] opacity-0"
           }`}
         >
           About me.
         </h2>
 
-        <div className="mt-8" />
+        <div className="mt-4 md:mt-8" />
 
         {/* Text */}
-        <div className="flex flex-col gap-4">
-          {/* text-3xl max-w-[80%] font-kngb text-orange-100/70 */}
+        <div className="flex flex-col gap-2 md:gap-4">
           <p
             id="p1"
             ref={p1Ref}
-            className={`text-3xl max-w-[80%] font-kngb text-orange-100/70 duration-500 ${
-              visibleElements.p1 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
+            className={`text-base sm:text-xl md:text-2xl lg:text-3xl md:max-w-[80%] lg:max-w-[70%] font-kngb text-white/70 duration-500 ${
+              visibleElements.p1
+                ? "ml-0 opacity-100"
+                : " md:ml-[-80px] opacity-0"
             }`}
           >
             I was born in Brazil, in 2003, but I currently reside on the US.
@@ -73,8 +76,10 @@ const About = () => {
           <p
             id="p2"
             ref={p2Ref}
-            className={`text-3xl max-w-[80%] font-kngb text-orange-100/70 duration-500 ${
-              visibleElements.p2 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
+            className={`text-base sm:text-xl md:text-2xl lg:text-3xl md:max-w-[80%] lg:max-w-[70%] font-kngb text-white/70 duration-500 ${
+              visibleElements.p2
+                ? "ml-0 opacity-100"
+                : " md:ml-[-80px] opacity-0"
             }`}
           >
             I have been developing since 2018, exploring many languages such as
@@ -84,8 +89,10 @@ const About = () => {
           <p
             id="p3"
             ref={p3Ref}
-            className={`text-3xl max-w-[80%] font-kngb text-orange-100/70 duration-500 ${
-              visibleElements.p3 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
+            className={`text-base sm:text-xl md:text-2xl lg:text-3xl md:max-w-[80%] lg:max-w-[70%] font-kngb text-white/70 duration-500 ${
+              visibleElements.p3
+                ? "ml-0 opacity-100"
+                : " md:ml-[-80px] opacity-0"
             }`}
           >
             I started developing sneaker bots, using scrapers/requests, and it
@@ -95,8 +102,10 @@ const About = () => {
           <p
             id="p4"
             ref={p4Ref}
-            className={`text-3xl max-w-[80%] font-kngb text-orange-100/70 duration-500 ${
-              visibleElements.p4 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
+            className={`text-base sm:text-xl md:text-2xl lg:text-3xl md:max-w-[80%] lg:max-w-[70%] font-kngb text-white/70 duration-500 ${
+              visibleElements.p4
+                ? "ml-0 opacity-100"
+                : " md:ml-[-80px] opacity-0"
             }`}
           >
             Now I am studying Computer Science at Wentworth Institute of
@@ -106,8 +115,10 @@ const About = () => {
           <p
             id="p5"
             ref={p5Ref}
-            className={`text-3xl max-w-[80%] font-kngb text-orange-100/70 duration-500 ${
-              visibleElements.p5 ? " ml-0 opacity-100" : "ml-[-80px] opacity-0"
+            className={`text-base sm:text-xl md:text-2xl lg:text-3xl md:max-w-[80%] lg:max-w-[70%] font-kngb text-white/70 duration-500 ${
+              visibleElements.p5
+                ? "ml-0 opacity-100"
+                : "md:ml-[-80px] opacity-0 "
             }`}
           >
             In my free time I like to practice tennis, explore cultural recipes,
