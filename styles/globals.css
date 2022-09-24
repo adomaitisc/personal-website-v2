@@ -6,8 +6,23 @@ body {
   margin: 0px;
 }
 
+/* edit scrollbar on scroll_element */
+
+body::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(188, 188, 188, 0.504); /* color of the scroll thumb */
+  border-radius: 1px; /* roundness of the scroll thumb */
+}
+
 #bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+  background: linear-gradient(rgba(0, 0, 0, 0.41), rgba(0, 0, 0, 0.41)),
     url(../public/gradient-bg-2.jpeg);
   background-position: center center;
   background-size: cover;

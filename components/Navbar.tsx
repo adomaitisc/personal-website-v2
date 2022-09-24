@@ -5,18 +5,6 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
   return (
     <>
       <div className="py-4 h-20 w-screen sm:w-full sm:py-8 fixed top-0 flex flex-row items-center justify-center font-kngb backdrop-blur-md">
-        <div className="left-24 absolute cursor-pointer">
-          <Link
-            style={{ padding: "1rem 0.75rem" }}
-            to="hello"
-            spy={true}
-            smooth={true}
-            duration={300}
-          >
-            <Image src="/icons/Logo.svg" width={42} height={20} alt="Logo" />
-          </Link>
-        </div>
-
         <div className="right-0 absolute cursor-pointer invisible sm:visible">
           <div
             className="py-1 px-[0.75rem]"
@@ -78,7 +66,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </Link>
         </div>
 
-        <div className="px-4 py-3 text-violet-500 font-kng hover:text-violet-300 cursor-pointer relative sm:hidden animate-pulse">
+        <div className="px-4 py-3 text-violet-500 font-kng cursor-pointer relative sm:hidden animate-pulse hover:animate-none">
           <a
             style={{ padding: "1rem 0.75rem" }}
             href="https://github.com/adomaitisc/personal-website-v2/raw/main/public/resume.pdf"

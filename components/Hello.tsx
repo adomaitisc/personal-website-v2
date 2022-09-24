@@ -21,13 +21,13 @@ const Hello = () => {
     subtitle: false,
     title: false,
     p1: false,
-    div: false,
+    p2: false,
   });
 
   const subtitleRef = useRef<HTMLHeadingElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const p1Ref = useRef<HTMLParagraphElement>(null);
-  const divRef = useRef<HTMLDivElement>(null);
+  const p2Ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -48,7 +48,7 @@ const Hello = () => {
     observer.observe(subtitleRef.current!);
     observer.observe(titleRef.current!);
     observer.observe(p1Ref.current!);
-    observer.observe(divRef.current!);
+    observer.observe(p2Ref.current!);
   }, []);
 
   return (
@@ -96,20 +96,15 @@ const Hello = () => {
         <div className="mt-10 sm:mt-4" />
 
         {/* Suitcase */}
-        <div
-          id="div"
-          ref={divRef}
-          className={`text-2xl sm:text-base font-kngb text-zinc-400 duration-500 ${
-            visibleElements.div ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
+        <p
+          id="p2"
+          ref={p2Ref}
+          className={`text-2xl sm:text-base font-kngb text-rose-500/70 duration-500 ${
+            visibleElements.p2 ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
           }`}
         >
-          currently developing with:
-          <div className="flex gap-4">
-            <p className="text-orange-400/70">Typescript</p>
-            <p className="text-rose-400/70">ReactJS</p>
-            <p className="text-red-400/70">TailwindCSS</p>
-          </div>
-        </div>
+          From São Paulo, based in Boston.
+        </p>
       </div>
     </div>
   );

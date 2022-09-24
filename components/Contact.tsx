@@ -65,8 +65,8 @@ const Contact = () => {
               visibleElements.p1 ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
             }`}
           >
-            If you wish to start your long-dreamed project, or if you want to
-            clear some questions.
+            Email or Phone me if you decide to invite me for an interview, or
+            discuss a potential project.
           </p>
 
           <p
@@ -76,8 +76,8 @@ const Contact = () => {
               visibleElements.p2 ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
             }`}
           >
-            For casual purposes, you can dm me on any social media I have down
-            here.
+            You can either message me on any social platform, and I will be
+            happy to get back to you.
           </p>
 
           <p
@@ -87,15 +87,15 @@ const Contact = () => {
               visibleElements.p3 ? "ml-0 opacity-100" : "ml-[-80px] opacity-0"
             }`}
           >
-            Now, if you are serious, you can email me so we can schedule a
-            meeting or something.
+            For hiring purposes, there is a link to my resume at the top of the
+            page, and it has been recently updated.
           </p>
         </div>
 
         <div className="mt-8" />
 
         {/* Social */}
-        <div className="flex flex-row text-2xl sm:flex-col sm:text-sm sm:gap-3 text-white font-kngb gap-8 opacity-70 duration-500">
+        <div className="flex flex-row text-2xl sm:flex-col sm:text-sm sm:gap-3 font-kngb gap-8 opacity-70 duration-500">
           <div className="flex flex-col items-start gap-2 sm:gap-3">
             <div
               ref={socialRef}
@@ -108,8 +108,8 @@ const Contact = () => {
             >
               <Image
                 src="/icons/Mail.svg"
-                width={20}
-                height={20}
+                width={24}
+                height={24}
                 alt="Mail Icon"
               />
               <a
@@ -131,8 +131,8 @@ const Contact = () => {
             >
               <Image
                 src="/icons/Phone.svg"
-                width={20}
-                height={20}
+                width={24}
+                height={24}
                 alt="Phone Icon"
               />
               617-992-6053
@@ -168,8 +168,8 @@ const Contact = () => {
             >
               <Image
                 src="/icons/LinkedIn.svg"
-                width={16}
-                height={16}
+                width={20}
+                height={20}
                 alt="LinkedIn Icon"
               />
               <a
@@ -191,8 +191,8 @@ const Contact = () => {
             >
               <Image
                 src="/icons/Github.svg"
-                width={16}
-                height={16}
+                width={20}
+                height={20}
                 alt="Github Icon"
               />
               <a
