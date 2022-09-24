@@ -52,7 +52,7 @@ const Hello = () => {
   }, []);
 
   return (
-    <div className="w-screen mt-20 h-[90vh] flex items-center p-[20%]">
+    <div className="w-screen mt-20 h-[85vh] flex items-center p-[20%]">
       <div className="h-full sm:h-80v sm:max-w-[80%] flex flex-col items-start justify-center text-left scale-100">
         {/* Subtitle */}
         <h3
@@ -80,7 +80,7 @@ const Hello = () => {
           Cauã Adomaitis
         </h1>
 
-        <div className="mt-10 sm:mt-4" />
+        <div className="mt-8 sm:mt-4" />
 
         {/* Briefing */}
         <p
@@ -93,7 +93,7 @@ const Hello = () => {
           I am a front-end developer, and computer science student.
         </p>
 
-        <div className="mt-10 sm:mt-4" />
+        <div className="mt-8 sm:mt-4" />
 
         {/* Suitcase */}
         <p
