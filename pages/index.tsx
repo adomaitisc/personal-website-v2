@@ -19,12 +19,15 @@ const Home: NextPage = () => {
       <Background />
       <div className="w-screen">
         <div
-          className="pt-20 w-full h-[80vh] md:h-screen px-8 sm:px-6 md:px-0"
+          className="pt-20 w-full h-[60vh] md:h-screen px-8 sm:px-6 md:px-0"
           id="hello"
         >
           <Hello />
         </div>
-        <div className="w-full h-screen px-8 sm:px-6 md:px-0" id="about">
+        <div
+          className="w-full h-[80vh] md:h-screen px-8 sm:px-6 md:px-0"
+          id="about"
+        >
           <About />
         </div>
         <div

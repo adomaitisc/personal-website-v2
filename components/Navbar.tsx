@@ -14,7 +14,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </div>
         </div>
 
-        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative">
+        <div className="md:px-4 py-3 hover:text-gray-300 cursor-pointer relative">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -27,7 +27,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </Link>
         </div>
 
-        {/* <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative">
+        {/* <div className="md:px-4 py-3 hover:text-gray-300 cursor-pointer relative">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -40,7 +40,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </Link>
         </div> */}
 
-        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative">
+        <div className="md:px-4 py-3 hover:text-gray-300 cursor-pointer relative">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -53,7 +53,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </Link>
         </div>
 
-        <div className="px-4 py-3 hover:text-gray-300 cursor-pointer relative">
+        <div className="md:px-4 py-3 hover:text-gray-300 cursor-pointer relative">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -66,7 +66,7 @@ const Navbar = ({ onClick, height, position }: any | undefined) => {
           </Link>
         </div>
 
-        <div className="px-4 py-3 text-violet-500 font-kng cursor-pointer relative animate-pulse hover:animate-none">
+        <div className="md:px-4 py-3 text-violet-500 font-kng cursor-pointer relative animate-pulse hover:animate-none">
           <a
             style={{ padding: "1rem 0.75rem" }}
             href="https://github.com/adomaitisc/personal-website-v2/raw/main/public/resume.pdf"
