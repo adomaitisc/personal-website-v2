@@ -31,7 +31,7 @@ const Home: NextPage = () => {
           <About />
         </div>
         <div
-          className="w-full h-[80vh] md:h-screen px-8 sm:px-6 md:px-0"
+          className="pb-20 w-full h-[100vh] md:h-screen px-8 sm:px-6 md:px-0"
           id="contact"
         >
           <Contact />
