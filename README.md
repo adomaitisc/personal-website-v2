@@ -1,8 +1,8 @@
 # My personal Website - Website Online
 
-**visit the website at adomaitisc.com**
+**[visit the website](https://adomaitisc.com)**
 
-It is the ~~fourth~~ **fifth** design iteration because it took me a long time to really mature some design ideas and gather references.
+This is the first finished website, after designing and starting three sites, I made this one only with the bet parts of the other ones.
 
 ![Image of Hello page in the website.](https://raw.githubusercontent.com/adomaitisc/personal-website-v2/main/public/readme.png "o.o")
 
