@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 export default function SEO() {
-  const title = "Cauã Adomaitis";
+  const title = "Cauã Adomaitis | Web Developer";
   const description =
     "Front end developer, UI/UX designer, and a passionate about technology.";
 
