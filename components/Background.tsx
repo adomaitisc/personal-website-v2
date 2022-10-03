@@ -1,7 +1,7 @@
 const Background = () => {
   return (
     <>
-      <div className="absolute top-0 bottom-0 w-full" id="bg" />
+      <div className="absolute h-[240vh] md:h-[300vh] w-full" id="bg" />
     </>
   );
 };

@@ -18,12 +18,12 @@ It is the ~~fourth~~ **fifth** design iteration because it took me a long time t
 - [x] NavBar
 - [ ] Prop-able Projects
 - [x] react-scroll (navbar/content)
-- [ ] Mobile friendly (fuck)
+- [x] Mobile friendly -- Tailwind is awesome!
   - [x] max-w-320px
   - [ ] max-w-480px
   - [ ] max-w-600px
   - [ ] max-w-768px
   - [ ] max-w-992px
   - [ ] max-w-1382px
-- [ ] Meta tags
+- [x] Meta tags
 - [ ] Loader
