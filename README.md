@@ -1,13 +1,14 @@
-# My personal Website
+# My personal Website - Website Online
+
+**visit the website at adomaitisc.com**
 
 It is the ~~fourth~~ **fifth** design iteration because it took me a long time to really mature some design ideas and gather references.
 
-![Image of Hello page in the website.](https://raw.githubusercontent.com/adomaitisc/personal-website-v2/main/public/social-1200x630.png "o.o")
+![Image of Hello page in the website.](https://raw.githubusercontent.com/adomaitisc/personal-website-v2/main/public/readme.png "o.o")
 
-**Still under Development!**
+## Todos
 
-## Current Todos
-
+- [ ] Loader
 - [x] Design
 - [x] Redesign
 - [x] Mobile Version (design)
@@ -26,4 +27,3 @@ It is the ~~fourth~~ **fifth** design iteration because it took me a long time t
   - [ ] max-w-992px
   - [ ] max-w-1382px
 - [x] Meta tags
-- [ ] Loader
