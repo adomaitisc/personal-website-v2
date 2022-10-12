@@ -2,7 +2,7 @@
 
 **[visit the website](https://adomaitisc.com)**
 
-This is the first finished website, after designing and starting three sites, I made this one only with the bet parts of the other ones.
+This is the first finished website, after designing and starting three sites, I made this one only with the best of the other ones.
 
 ![Image of Hello page in the website.](https://raw.githubusercontent.com/adomaitisc/personal-website-v2/main/public/readme.png "o.o")
 
