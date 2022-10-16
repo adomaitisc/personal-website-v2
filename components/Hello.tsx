@@ -106,7 +106,7 @@ const Hello = () => {
             height={20}
             alt="Github Icon"
           />
-          Code
+          Get code
         </a>
       </div>
     </div>
