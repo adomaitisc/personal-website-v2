@@ -1,4 +1,4 @@
-# My personal Website - Website Online
+# My personal Website
 
 **[visit the website](https://adomaitisc.com)**
 
