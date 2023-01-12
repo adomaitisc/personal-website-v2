@@ -36,7 +36,6 @@ const Hello = () => {
     observer.observe(titleRef.current!);
     observer.observe(p1Ref.current!);
     observer.observe(p2Ref.current!);
-    observer.observe(ghRef.current!);
   }, []);
 
   return (
