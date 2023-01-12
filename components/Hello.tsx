@@ -91,23 +91,6 @@ const Hello = () => {
         >
           From São Paulo, based in Boston.
         </p>
-        <a
-          id="gh"
-          ref={ghRef}
-          href="https://github.com/adomaitisc/personal-website-v2"
-          className={`absolute bottom-[15%] right-[15%] text-sm sm:text-base md:text-lg lg:text-xl md:max-w-[80%] lg:max-w-[70%] font-kngb text-white/70 duration-500 flex gap-2 py-1 px-2 hover:bg-white/40 rounded-md ${
-            visibleElements.gh ? "ml-0 opacity-100" : "md:mr-[-80] opacity-0"
-          }`}
-        >
-          <Image
-            style={{ opacity: "0.7" }}
-            src="/icons/Github.svg"
-            width={20}
-            height={20}
-            alt="Github Icon"
-          />
-          Get code
-        </a>
       </div>
     </div>
   );
