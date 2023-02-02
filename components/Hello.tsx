@@ -76,7 +76,8 @@ const Hello = () => {
             visibleElements.p1 ? "ml-0 opacity-100" : "md:ml-[-80px] opacity-0"
           }`}
         >
-          I'm a fullstack developer, creating beautiful and functional web apps.
+          I am a fullstack developer, creating beautiful and functional web
+          apps.
         </p>
         <p
           id="p2"
@@ -86,6 +87,8 @@ const Hello = () => {
           }`}
         >
           From São Paulo, based in Boston.
+          <br />
+          Currently working @ Qualidade Inteligente
         </p>
       </div>
     </div>

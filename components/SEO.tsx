@@ -1,9 +1,9 @@
 import Head from "next/head";
 
 export default function SEO() {
-  const title = "Cauã Adomaitis | Web Developer";
+  const title = "Cauã Adomaitis | Fullstack Dev";
   const description =
-    "Front end developer, UI/UX designer, and a passionate about technology.";
+    "Fullstack developer creating beautiful and functional web apps.";
 
   return (
     <Head>

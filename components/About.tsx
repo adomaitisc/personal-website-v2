@@ -83,7 +83,7 @@ const About = () => {
                 : " md:ml-[-80px] opacity-0"
             }`}
           >
-            I've been developing since 2018, exploring various languages like
+            I have been developing since 2018, exploring various languages like
             Go, Java, Python, Javascript, and many more.
           </p>
 
@@ -96,8 +96,8 @@ const About = () => {
                 : " md:ml-[-80px] opacity-0"
             }`}
           >
-            Now, I work with Typescript, usually building React or NextJS apps.
-            I am also a TailwindCSS fan - I think it is great to build fast and
+            Now I work with Typescript, usually building React or NextJS apps. I
+            am also a TailwindCSS fan - I think it is great to build fast and
             responsive UIs.
           </p>
 
