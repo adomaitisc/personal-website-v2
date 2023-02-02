@@ -13,7 +13,6 @@ const Contact = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const p1Ref = useRef<HTMLParagraphElement>(null);
   const p2Ref = useRef<HTMLParagraphElement>(null);
-  const p3Ref = useRef<HTMLParagraphElement>(null);
   const socialRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -35,7 +34,6 @@ const Contact = () => {
     observer.observe(titleRef.current!);
     observer.observe(p1Ref.current!);
     observer.observe(p2Ref.current!);
-    observer.observe(p3Ref.current!);
     observer.observe(socialRef.current!);
   }, []);
 
@@ -46,7 +44,7 @@ const Contact = () => {
         <h2
           id="title"
           ref={titleRef}
-          className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-kngb text-violet-500/70 duration-500 ${
+          className={`text-xl sm:text-2xl font-kng text-violet-500 duration-500 ${
             visibleElements.title
               ? "ml-0 opacity-100"
               : " md:ml-[-80px] opacity-0"
@@ -55,54 +53,41 @@ const Contact = () => {
           Send me a message.
         </h2>
 
-        <div className="mt-4 md:mt-8" />
+        <div className="mt-4" />
 
         {/* Text */}
         <div className="flex flex-col gap-2 md:gap-4">
           <p
             id="p1"
             ref={p1Ref}
-            className={`text-base sm:text-xl md:text-2xl lg:text-3xl md:max-w-[80%] lg:max-w-[70%] font-kngb text-white/70 duration-500 ${
+            className={`text-base sm:text-xl md:max-w-[80%] lg:max-w-[70%] font-kng text-zinc-300 duration-500 ${
               visibleElements.p1
                 ? "ml-0 opacity-100"
                 : " md:ml-[-80px] opacity-0"
             }`}
           >
-            Email or Phone me if you decide to invite me for an interview, or
-            discuss a potential project.
+            Email or Phone me if you want to colaborate on a project or want
+            some tips on how to get started with web development.
           </p>
 
           <p
             id="p2"
             ref={p2Ref}
-            className={`text-base sm:text-xl md:text-2xl lg:text-3xl md:max-w-[80%] lg:max-w-[70%] font-kngb text-white/70 duration-500 ${
+            className={`text-base sm:text-xl md:max-w-[80%] lg:max-w-[70%] font-kng text-zinc-300 duration-500 ${
               visibleElements.p2
                 ? "ml-0 opacity-100"
                 : " md:ml-[-80px] opacity-0"
             }`}
           >
-            You can either message me on any social platform, and I will be
-            happy to get back to you.
-          </p>
-
-          <p
-            id="p3"
-            ref={p3Ref}
-            className={`text-base sm:text-xl md:text-2xl lg:text-3xl md:max-w-[80%] lg:max-w-[70%] font-kngb text-white/70 duration-500 ${
-              visibleElements.p3
-                ? "ml-0 opacity-100"
-                : " md:ml-[-80px] opacity-0"
-            }`}
-          >
-            For hiring purposes, there is a link to my resume at the top of the
-            page, and it has been recently updated.
+            You can also message me on linkedin and I will be happy to get back
+            to you.
           </p>
         </div>
 
         <div className="mt-8" />
 
         {/* Social */}
-        <div className="flex flex-col md:flex-row text-base md:text-xl font-kngb gap-4 md:gap-8 opacity-70 duration-500">
+        <div className="flex flex-col md:flex-row text-base md:text-xl font-kng gap-4 md:gap-8 opacity-70 duration-500">
           <div className="flex flex-col items-start gap-4 md:gap-2 ">
             <div
               ref={socialRef}

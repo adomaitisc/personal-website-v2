@@ -44,7 +44,7 @@ const Hello = () => {
         <h3
           id="subtitle"
           ref={subtitleRef}
-          className={`text-lg sm:text-xl md:text-2xl lg:text-3xl font-kngb text-white/70 duration-500 ${
+          className={`text-lg sm:text-xl font-kng text-zinc-300 duration-500 ${
             visibleElements.subtitle
               ? "ml-0 opacity-100"
               : "md:ml-[-80px] opacity-0"
@@ -58,7 +58,7 @@ const Hello = () => {
         <h1
           id="title"
           ref={titleRef}
-          className={`text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-kngb text-white font-bold duration-500 ${
+          className={`text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-kngb text-white duration-500 ${
             visibleElements.title
               ? "ml-0 opacity-100"
               : "md:ml-[-80px] opacity-0"
@@ -72,19 +72,16 @@ const Hello = () => {
         <p
           id="p1"
           ref={p1Ref}
-          className={`text-lg sm:text-xl md:text-2xl lg:text-3xl md:max-w-[80%] lg:max-w-[70%] font-kngb text-white/70 duration-500 ${
+          className={`text-lg mt-2 sm:text-xl md:max-w-[80%] lg:max-w-[70%] font-kng text-zinc-300 duration-500 ${
             visibleElements.p1 ? "ml-0 opacity-100" : "md:ml-[-80px] opacity-0"
           }`}
         >
-          I am a front-end developer, and computer science student.
+          I'm a fullstack developer, creating beautiful and functional web apps.
         </p>
-
-        <div className="mt-4 md:mt-8" />
-
         <p
           id="p2"
           ref={p2Ref}
-          className={`text-base sm:text-lg md:text-xl lg:text-2xl font-kngb text-rose-500/70 duration-500 ${
+          className={`text-base mt-4 sm:text-lg md:text-xl font-kng text-rose-500 duration-500 ${
             visibleElements.p2 ? "ml-0 opacity-100" : "md:ml-[-80px] opacity-0"
           }`}
         >

@@ -1,10 +1,13 @@
+import Image from "next/image";
 import { Link } from "react-scroll";
+
+import icon from "../public/android-chrome-192x192.png";
 
 const Navbar = () => {
   return (
     <>
-      <div className="py-4 h-20 w-screen fixed top-0 flex flex-row items-center justify-center font-kngb backdrop-blur-md">
-        <div className="md:px-4 py-3 hover:text-gray-300 cursor-pointer relative select-none touch-none">
+      <div className="mt-4 mx-auto w-72 fixed top-0 left-0 right-0 flex items-center justify-center bg-black/40 backdrop-blur-lg rounded-full font-kng text-sm outline outline-1 outline-white/20">
+        <div className="md:px-1 py-2 hover:text-gray-300 cursor-pointer select-none touch-none">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -13,11 +16,11 @@ const Navbar = () => {
             smooth={true}
             duration={300}
           >
-            Home
+            Hello
           </Link>
         </div>
 
-        {/* <div className="md:px-4 py-3 hover:text-gray-300 cursor-pointer relative select-none touch-none">
+        {/* <div className="md:px-1 py-2 hover:text-gray-300 cursor-pointer select-none touch-none">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -30,7 +33,7 @@ const Navbar = () => {
           </Link>
         </div> */}
 
-        <div className="md:px-4 py-3 hover:text-gray-300 cursor-pointer relative select-none touch-none">
+        <div className="md:px-1 py-2 hover:text-gray-300 cursor-pointer select-none touch-none">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -43,7 +46,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="md:px-4 py-3 hover:text-gray-300 cursor-pointer relative select-none touch-none">
+        <div className="md:px-1 py-2 hover:text-gray-300 cursor-pointer select-none touch-none">
           <Link
             style={{ padding: "1rem 0.75rem" }}
             activeClass="text-zinc-400"
@@ -55,16 +58,8 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-
-        <div className="md:px-4 py-3 text-violet-500 font-kng cursor-pointer relative select-none touch-none animate-pulse hover:animate-none">
-          <a
-            style={{ padding: "1rem 0.75rem" }}
-            href="https://github.com/adomaitisc/personal-website-v2/raw/main/public/resume.pdf"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Resume
-          </a>
+        <div className="px-2 py-2 flex select-none touch-none">
+          <Image src={icon} alt="icon" width={20} height={20} />
         </div>
       </div>
     </>
